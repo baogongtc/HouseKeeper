@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="categorys">
+        <item>其他花费</item>
+        <item>衣服花费</item>
+        <item>家庭总生活费</item>
+        <item>娱乐消费</item>
+        <item>交通花费</item>
+        <item>学习花费</item>
+        <item>孩子花费</item>
+        <item>应酬花费</item>
+        <item>医疗花费</item>
+        <item>工资收入</item>
+        <item>其他收入</item>
+
+    </array>
+
+</resources>

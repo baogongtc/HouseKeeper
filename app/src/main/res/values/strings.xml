@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">管家</string>
+    <string name="action_settings">新账单</string>
+    <string name="title_activity_bill_creator">BillCreatorActivity</string>
+    <string name="section_format">账单: %1$d</string>
+
+    <string name="category_title">类型选择:</string>
+    <string name="money_title">金额:</string>
+
+
+
+
+</resources>
