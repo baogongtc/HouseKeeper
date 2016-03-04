@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
@@ -73,6 +74,8 @@ public class BillFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_bill_creator, container, false);
         AppCompatSpinner mCategorySpinner = (AppCompatSpinner) rootView.findViewById(R.id.category_spinner);
         mCategorySpinner.setAdapter(new CategoryAdapter(getActivity()));
+        LinearLayout billContainer = (LinearLayout) rootView.findViewById(R.id.bill_container);
+
         return rootView;
     }
 

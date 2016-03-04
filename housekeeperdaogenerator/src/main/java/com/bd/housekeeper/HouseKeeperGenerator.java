@@ -11,18 +11,29 @@ public class HouseKeeperGenerator {
 
         addFamilly(schema);
 
+        addRecord(schema);
+
         addBill(schema);
 
         new DaoGenerator().generateAll(schema,"../HouseKeeperDao/src/main/java");
     }
 
+    private static void addRecord(Schema schema) {
+        Entity record = schema.addEntity("Record");
+        record.addIdProperty().primaryKey().autoincrement();
+        record.addLongProperty("create_time");//record生成时间
+        record.addIntProperty("category");
+        record.addFloatProperty("money");
+        record.addStringProperty("owner");
+    }
+
     private static void addBill(Schema schema) {
         Entity bill = schema.addEntity("Bill");
         bill.addIdProperty().primaryKey().autoincrement();
-        bill.addLongProperty("create_time");
-        bill.addIntProperty("category");
-        bill.addFloatProperty("money");
-
+        bill.addLongProperty("create_time");//账单生成时间
+        bill.addFloatProperty("total_money");//是否重复？
+        bill.addStringProperty("record_list");
+        bill.addBooleanProperty("status");//是否完成
     }
 
     private static void addFamilly(Schema schema) {

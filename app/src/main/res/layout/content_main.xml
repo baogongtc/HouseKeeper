@@ -8,11 +8,23 @@
     tools:context="housekeeper.bd.com.housekeeper.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            ></com.github.mikephil.charting.charts.BarChart>
+
+
+    </RelativeLayout>
+
+
+
+
 
 </android.support.v4.widget.NestedScrollView>

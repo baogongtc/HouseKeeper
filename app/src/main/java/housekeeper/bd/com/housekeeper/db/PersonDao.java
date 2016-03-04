@@ -43,7 +43,7 @@ public class PersonDao extends AbstractDao<Person, Long> {
     public static void createTable(SQLiteDatabase db, boolean ifNotExists) {
         String constraint = ifNotExists? "IF NOT EXISTS ": "";
         db.execSQL("CREATE TABLE " + constraint + "\"PERSON\" (" + //
-                "\"_id\" INTEGER PRIMARY KEY ," + // 0: id
+                "\"_id\" INTEGER PRIMARY KEY AUTOINCREMENT ," + // 0: id
                 "\"NAME\" TEXT NOT NULL ," + // 1: name
                 "\"RELATIONSHIP\" TEXT," + // 2: relationship
                 "\"ALIAS\" TEXT," + // 3: alias
