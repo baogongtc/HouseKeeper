@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="housekeeperdaogenerator.housekeeperdaogenerator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/housekeeperdaogenerator/build/libs/housekeeperdaogenerator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
